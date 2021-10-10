@@ -1,0 +1,356 @@
+<html lang="en">
+	  <head>
+	    <!-- Required meta tags -->
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	    <!-- Bootstrap CSS -->
+	    <title>Table Demo</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="js/jquery.js"></script> 
+          <script src="media/js/jquery.dataTables.min.js"></script> 
+		  <link href="media/css/jquery.dataTables.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <section id="nav-bar">
+       <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="Images/demo-image.jpg"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars"></i>
+      
+          </button>
+          <div class="collapse navbar-collapse" id="navbar-nav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="testimonials">Testimonials</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact us">Contact Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  About Us
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">About Website</a></li>
+                  <li><a class="dropdown-item" href="#">Another action about website</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here about website</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Optional JavaScript; choose one of the two! -->
+
+	    <!-- Option 1: Bootstrap Bundle with Popper -->
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+
+	    <!-- Option 2: Separate Popper and Bootstrap JS -->
+	    <!--
+	    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+	    -->
+    </section>
+      
+    <!-- Banner Section------------------->
+    <section id="banner">
+      <div class="container">
+      <div class="row">
+      <div class="col-md-6">
+      <h1 class="promo-title"> Best Website Designing</h1>
+      <p>Through this website we can easy to learn.</p>
+      <a href="#"><img src="Images/play.png" class="play-btn">Watch Tutorials</a>
+      <section id="interview">
+        <div class="container">
+        <div class="row">
+      <div class="col-md-6 text-center">
+        <img src="Images/interview.jpg" class="interview-img">
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+    </section>
+  <!------Banner Section-->
+
+  <section id="table">
+    <div class="container">
+    <div class="row text-center">
+      <div class="col-md-6"></div>
+    <h1 class="table title">Table Demo</h1>
+  <script>
+    $(document).ready(function(){
+    $("#myTable").dataTable();
+  });
+  
+  </script>
+
+<table id="myTable" class="table">
+  <thead>
+  <tr>
+    <th>S.no</th>
+  <th>First Name</th>
+   <th>Last Name</th>
+   <th>Date</th>
+  </tr>
+  
+  </thead>
+  <tbody>
+    <tr>
+    <td>1</td>
+    <td>Menka</td>
+    <td>Raushan</td>
+    <td>15 August,18</td>
+  
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Shobha</td>
+    <td>Raushan</td>
+    <td>11 October,18</td>
+  
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Mamta</td>
+    <td>Raushan</td>
+    <td>12 December,19</td>
+  
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Saket</td>
+    <td>Paswan</td>
+    <td>11 October,18</td>
+  
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Rakesh</td>
+    <td>Paswan</td>
+    <td>11 October,18</td>
+  
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Pranit</td>
+    <td>Sinha</td>
+    <td>14 October,19</td>
+  
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>Prateek</td>
+    <td>Priyam</td>
+    <td>11 October,18</td>
+  
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>Surya</td>
+    <td>Joshi</td>
+    <td>11 October,18</td>
+  
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>Anika</td>
+    <td>Sharma</td>
+    <td>16 October,19</td>
+  
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>Maya</td>
+    <td>Sharma</td>
+    <td>10 October,18</td>
+  
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>Maya</td>
+    <td>Varma</td>
+    <td>9 October,18</td>
+  
+  </tr>
+  </tbody>
+  </table>
+
+ </section>
+</section>
+<!-- --------Services Section------------------------->
+   <section id="Services">
+    <div class="container text-center">
+      <h1 class="title">SERVICES</h1>
+    <div class="row text-center">
+    <div class="col-md-6 services">
+    <img src="Images/Marketing-Services.jpg" class="service-img">
+    <h4>Growth of Marketing Services</h4> 
+    <p>Growth Marketing is the process of 
+      designing and conducting experiments 
+      to optimize and improve the results of a 
+      target area.</p>
+    </div>
+      
+    <div class="col-md-6 services">
+      <img src="Images/Online-Branding.jpg" class="service-img">
+      <h4>Online Branding</h4> 
+      <p>Internet branding is a brand 
+        management technique that 
+       uses the World Wide Web & 
+       Social Media Channels as amedium for 
+       positioning a brand in the marketplace. </p>
+  </div>
+  <div class="col-md-6 services">
+    <img src="Images/Animated.jpg" class="service-img">
+    <h4>Animated Ads</h4> 
+    <p>Animation can capture
+       the essence of your brand 
+       and express exactly
+       what you are wanting your 
+       audience to understand about
+        your product or service. 
+       </p>
+</div>
+
+<div class="col-md-6 services">
+  <img src="Images/card-service.jpg" class="service-img">
+  <h4>Card Services</h4> 
+  <p>Card Services means the 
+    prepaid card services provided
+     by Bank to Cardholders through 
+     use of the Cards.</p>
+</div>
+</div>
+<button type="button" class="btn btn-primary">All Services</button>
+</div>
+
+<!----------Portfolio Section-->
+<section id="Portfolio">
+  <div class="container text-center">
+    <h1 class="title">Portfolio</h1>
+  <div class="row text-center">
+  <div class="col-md-6 portfolio">
+  <p>A portfolio is a collection of financial investments like stocks, bonds, 
+    commodities, cash, and cash equivalents, including closed-end funds and exchange
+     traded funds (ETFs). People generally believe that stocks, bonds, and cash 
+     comprise the core of a portfolio.</p>
+    </div>
+  <div class="col-md-6 portfolio">
+    <img src="Images/portfolio1.jpg" class="portfolio-img">
+    <img src="Images/portfolio2.jpg" class="portfolio-img">
+     <img src="Images/portfolio3.jpg" class="portfolio-img">
+     <img src="Images/portfolio4.jpg" class="portfolio-img">
+</div>
+</section>
+<!---About Us------->
+<section id="about-us">
+<div class="container">
+<h1 class="title text-center">WHY CHOOSE US ?</h1>
+<div class="row">
+<div class="col-md-6 about-us">
+<h4 class="about-title">Why we are different</h4>
+   <ul>
+      <li>Understand our client business goal first</li>
+      <li>Believe in doing business with honesty</li>
+      <li>We deliver on time</li>
+      <li>We create a wining content strategy</li>
+      <li>We protect your online reputation</li>
+      <li>Believe in doing business with honesty</li>
+   </ul>
+</div>
+<div class="col-md-6">
+<img src="Images/Business.png" class="img-fluid">
+</div>
+</div>
+</div>
+</section>
+<!--------Testimonials-------->
+<section id="testimonials">
+<div class="container">
+<h1 class="title text-center">WHAT CLIENTS SAY</h1>
+<div class="row offset-1">
+<div class="col-md-5 testimonials">
+   <p>Sescribe easy tutorials YouTube Channels to Watch more video on website development,
+     Digital Marketing, wordpress and graphic design.</p>
+   <img src="Images/testimonials.jpg">
+   <p class="user-details"><b>Agelina</br>Co-Founder at XYZ</P>
+</div>
+<div class="col-md-5 testimonials">
+  <p>Subscribe easy tutorials YouTube Channels to Watch more video on website development,
+    Digital Marketing, wordpress and graphic design.</p>
+  <img src="Images/user.png">
+  <p class="user-details"><b>Jhon Doe</br>Director at XYZ</P>
+  
+</div>
+<div class="container">
+  <h2>Registration Form</h2>
+  <form action="/action_page.php">
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" name="remember"> Remember me</label>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>
+
+</div>
+</div>
+</section>
+<!-----------Social Media------->
+<section id="social-media">
+<div class="container text-center">
+<p>Find on Social Media</p>
+   <div class="social-icons">
+   <a href=""><img src="Images/facebook.png"></a>
+   <a href=""><img src="Images/instagram1.jpg"></a>
+   <a href=""><img src="Images/twitter1.png"></a>
+   <a href=""><img src="Images/linkedin1png.png"></a>
+   <a href=""><img src="Images/watsapp2.png"></a>
+   <a href=""><img src="Images/snapchat2.png"></a>
+   </div>
+</div>
+</section>
+<!---------Footer Section-->
+<section id="footer">
+<div class="container text-center">
+<div class="col-md-4 footer box"></div>
+  <p>Subscribe easy tutorials YouTube Channels to Watch more video on website development,
+    Digital Marketing, wordpress and graphic design. Press the bell icon to get the notification.</p>
+</div>
+<div class="row text-center"></div>
+<h4 class="title">CONTACT US</h4>
+<P><i class="fa fa-map-marker"></i>World Trade Cetre, Bangalore</P>
+<P><i class="fa fa-phone"></i>+91 9986722640</P>
+<P><i class="fa fa-envelope-o"></i></i>menka.raushan@gmail.com</P>
+<div>
+  <p>Created by@Menka Raushan| All Right Reserved!</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</body>
+</html>
